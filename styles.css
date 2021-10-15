@@ -63,3 +63,19 @@ button:hover {
     font-size: 30px;
     font-weight: 500;
 }
+
+
+
+
+@media screen and (max-width: 450px) {
+    .calculator-grid {
+        grid-template-columns: repeat(4, 80px);
+    }
+    
+    button {
+        font-size: 25px;
+    }
+    .output .previous-operand {
+        font-size: 15px;
+    }
+}
