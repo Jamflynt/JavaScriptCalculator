@@ -17,7 +17,7 @@ body {
 .calculator-grid {
     display: grid;
     justify-content: center;
-    /* align content takes up entire space, align items just centers it Keep forgetting this */
+    /* align content takes up entire space, align items just centers itself. */
     align-content: center;
     min-height: 100vh;
     grid-template-columns: repeat(4, 100px);
@@ -34,4 +34,32 @@ button {
 
 button:hover {
     background-color: rgba(255, 255, 255, 0.90);
+}
+
+.span-two {
+    grid-column: span 2;
+}
+
+.output {
+    grid-column: 1/-1;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding: 20px;
+    /* fix wrapping */
+    word-break: break-word;
+    word-wrap: break-word;
+}
+
+.output .previous-operand {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 20px;
+}
+
+.output .current-operand {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 30px;
+    font-weight: 500;
 }
