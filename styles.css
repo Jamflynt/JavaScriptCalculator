@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+*{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to right, #b350f5, #3627e0);
+    display: flex;
+    justify-content: center;
+}
+
+.calculator-grid {
+    display: grid;
+    justify-content: center;
+    /* align content takes up entire space, align items just centers it Keep forgetting this */
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+
+button {
+    cursor: pointer;
+    font-size: 30px;
+    border: 1px solid white;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.90);
+}
